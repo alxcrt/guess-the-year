@@ -4,10 +4,6 @@
 
 <svelte:head>
 	<title>Guess the Year game</title>
-	<script
-		defer
-		data-domain="guess-the-year.alexcretu.com"
-		src="https://plausible.io/js/plausible.js"></script>
 </svelte:head>
 
 <div
