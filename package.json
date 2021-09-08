@@ -2,6 +2,7 @@
 	"name": "~TODO~",
 	"version": "0.0.1",
 	"scripts": {
+		"start": "sirv build -p 3001",
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
 		"preview": "svelte-kit preview",
@@ -10,6 +11,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-node": "^1.0.0-next.45",
+		"@sveltejs/adapter-static": "^1.0.0-next.18",
 		"@sveltejs/kit": "next",
 		"autoprefixer": "^10.3.1",
 		"cssnano": "^5.0.6",
@@ -24,5 +26,8 @@
 		"svelte-preprocess": "^4.7.4",
 		"tailwindcss": "^2.2.4"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"sirv-cli": "^1.0.14"
+	}
 }
