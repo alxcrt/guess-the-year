@@ -2,7 +2,6 @@
 	"name": "~TODO~",
 	"version": "0.0.1",
 	"scripts": {
-		"start": "sirv build -p 3001",
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
 		"preview": "svelte-kit preview",
