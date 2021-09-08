@@ -3,7 +3,7 @@
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
 
-	const score = $page.query.get('score');
+	let score = atob($page.query.get('score'));
 </script>
 
 <main class=" flex flex-col px-4">

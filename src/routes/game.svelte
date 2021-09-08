@@ -57,7 +57,7 @@
 				enterState();
 				round++;
 			} else {
-				goto(`/gameover?score=${round.toString()}`);
+				goto(`/gameover?score=${btoa(round.toString())}`);
 			}
 		}
 	}
