@@ -1,4 +1,4 @@
-![Banner](static/guess-the-year-cover.png?raw=true)
+![Banner](static/guess-the-year-cover.png)
 
 # create-svelte
 
