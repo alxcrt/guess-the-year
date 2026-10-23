@@ -1,10 +1,16 @@
 {
-	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"$lib": ["src/lib"],
-			"$lib/*": ["src/lib/*"]
-		}
-	},
-	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte"]
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "moduleResolution": "bundler",
+    "target": "ESNext",
+    "module": "ESNext",
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*.d.ts",
+    "src/**/*.js",
+    "src/**/*.svelte"
+  ],
+  "extends": "$app/tsconfig"
 }

@@ -3,7 +3,7 @@
 	import { fly, scale } from 'svelte/transition';
 	import { tweened } from 'svelte/motion';
 	import { goto } from '$app/navigation';
-	import allQuestions from '$static/questions.js';
+	import allQuestions from '../../questions.js';
 
 	const initialState = {
 		state: 'guess',
