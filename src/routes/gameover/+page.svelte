@@ -1,9 +1,14 @@
 <script>
 	import { scale } from 'svelte/transition';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
 
-	let score = atob($page.query.get('score'));
+	const score = $derived.by(() => {
+        try {
+            const value = Number(atob(page.url.searchParams.get('score') || 'MA=='));
+            return Number.isFinite(value) && value >= 0 ? value : 0;
+        } catch { return 0; }
+    });
 </script>
 
 <main class=" flex flex-col px-4">
